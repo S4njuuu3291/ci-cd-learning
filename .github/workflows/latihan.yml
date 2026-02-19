@@ -1,0 +1,36 @@
+name: Challenge Sanju CI-CD
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  job-keren:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Greet
+        run: echo "Hello World!"
+      - name: 2. Versi Python
+        run: python --version
+      - name: 3. Info OS
+        run: uname -a
+      - name: 4. Cek File
+        run: ls -la
+      - name: 5. Info RAM
+        run: free -m
+      - name: 6. Info CPU
+        run: lscpu
+      - name: 7. Path Sekarang
+        run: pwd
+      - name: 8. User Aktif
+        run: whoami
+      - name: 9. Env Github
+        run: env | grep GITHUB
+      - name: 10. Waktu Server
+        run: date
+      - name: 11. Fail
+        run: |
+          echo "Sudah diperbaiki mas!"
+      - name: 12. Last step
+        run: echo "Ini gak akan ke kirim di log!"
