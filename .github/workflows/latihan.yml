@@ -31,7 +31,6 @@ jobs:
         run: date
       - name: 11. Fail
         run: |
-          echo "Duh, step ini bakal bikin tanda silang merah!"
-          exit 1
+          echo "Sudah diperbaiki mas!"
       - name: 12. Last step
         run: echo "Ini gak akan ke kirim di log!"
