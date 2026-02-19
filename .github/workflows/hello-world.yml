@@ -1,0 +1,17 @@
+name: Hello World
+
+on: push
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello from Github Actions!"
+
+      - name: Print system info
+        run: |
+          echo "Python version:"
+          python --version
+          echo "Current time:"
+          date
